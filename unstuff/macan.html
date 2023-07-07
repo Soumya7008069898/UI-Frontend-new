@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Macan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style5.css" />
+  </head>
+  <body> 
+    <div class="container">
+      <div class="containerpicker" id="porsche"></div>
+
+      <div class="color">
+        <h3>Choose Your Color:</h3>
+        <br />
+        <h4>Metalic color</h4>
+        <div class="color-selector">
+          <div id="red"></div>
+          <div id="silver"></div>
+        </div>
+        <div class="color-name">
+          <div class="name">red</div>
+          <div class="name">silver</div>
+        </div>
+        <h4>Gloss color</h4>
+        <div class="color-selector">
+          <div id="blue"></div>
+          <div id="ruby"></div>
+          <div id="orange"></div>
+        </div>
+        <div class="color-name">
+          <div class="name">blue</div>
+          <div class="name">ruby</div>
+          <div class="name">orange</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let redbtn = document.getElementById("red");
+      let silverbtn = document.getElementById("silver");
+      let bluebtn = document.getElementById("blue");
+      let rubybtn = document.getElementById("ruby");
+      let orangebtn=document.getElementById("orange");
+      let porsche = document.getElementById("porsche");
+
+      redbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker32.png)";
+      };
+      silverbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker33.png)";
+      };
+      bluebtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker31.png)";
+      };
+      rubybtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker35.png)";
+      };
+      orangebtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker30.png)";
+      };     
+    </script>
+  </body>
+</html>

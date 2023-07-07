@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/add.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body{
+        background-image: url(../images/background1.png);
+      }
+    </style>
+  </head>
+  <body>
+     <!-- nav start -->
+   <!-- nav start -->
+   <div class="header">
+    <div class="container1">
+      <div class="header-main">
+        <div class="logo">
+          <img src="../images/logo.png" height="60px" width="78px"
+          />
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay"></div>
+        <!-- navigation menu start -->
+         <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="../images/cancel.png" alt="close" />
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu"
+                >Services &#38; Equipment <i class="plus"></i
+              ></a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="../footerelements/acesso1.html">Accessories</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/spares.html">Spares</a>
+                </li>
+                <li class="menu-item"><a href="../footerelements/Servicepage.html">Service book</a></li>
+                <li class="menu-item">
+                  <a href="../footerelements/comparision.html">Comparision</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="../Aboutus.html">About Us</a>
+            </li>
+            <li class="menu-item">
+              <a href="../contactus.html">Contact Us</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu"
+                >Social<i class="plus"></i
+              ></a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="../footerelements/locationfinal.html">Locations</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/blogs and testimonial.html"
+                    >Testimonials & Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/gallery.html">Gallery</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/history.html">History</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/quote.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="../Loginpage.html">Login</a>
+            </li>
+            <li class="menu-item">
+              <a href="../unstuff/addtocart.html">My Cart</a>
+            </li>
+            <li class="menu-item">
+              <a href="../unstuff/profile.html">My Account</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+       </div>
+    </div>
+  </div>
+  <!-- nav end -->
+    <!-- nav end -->
+
+    <!-- add to cart start -->
+    <header>
+      <div class="nav container">
+        <a href="#" class="logos"><span>Spares and Accessories</span></a>
+        <!-- cart icon -->
+        <i class="bx bx-shopping-bag" id="cart-icon"></i>
+
+        <!-- cart -->
+        <div class="cart">
+          <h2 class="card-title">Your Cart</h2>
+          <!-- content -->
+          <div class="cart-content">
+            <!-- test box -->
+            
+          </div>
+
+          <!-- Total  -->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price" id="totalprices">$0</div>
+          </div>
+
+          <!-- buy button-->
+          <button type="button" class="btn-buy" onclick="buy()">Buy Now</button>
+          <!-- cart close -->
+          <i class='bx bx-x' id="cart-close"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- shop section -->
+    <section class="shop container">
+      <h2 class="section-title">Shop Products</h2>
+
+      <!-- content -->
+      <div class="shop-content">
+        <!-- box1 -->
+        <div class="product-box">
+          <img src="../images/acessory911p1.png" class="product-img" />
+          <h2 class="product-title">Akrapovic exhaust for 911</h2>
+          <span class="product-price">$12000</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box2 -->
+        <div class="product-box">
+          <img src="../images/headlight911.jpg" class="product-img" />
+          <h2 class="product-title">Headlight for 911</h2>
+          <span class="product-price">$4000</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box3 -->
+        <div class="product-box">
+          <img src="../images/headlightmacan.jpg" class="product-img" />
+          <h2 class="product-title">Headlight for Macan</h2>
+          <span class="product-price">$2900</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box4 -->
+        <div class="product-box">
+          <img src="../images/acessorytacan1.png" class="product-img" />
+          <h2 class="product-title">Regular Wheel</h2>
+          <span class="product-price">$2300</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box5 -->
+        <div class="product-box">
+          <img src="../images/acessoryboxster1.png" class="product-img" />
+          <h2 class="product-title">Exhaust for Boxster</h2>
+          <span class="product-price">$12000</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box6 -->
+        <div class="product-box">
+          <img src="../images/spares5.png" class="product-img" />
+          <h2 class="product-title">Clutch Plate</h2>
+          <span class="product-price">$4700</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box7 -->
+        <div class="product-box">
+          <img src="../images/acessorytacan3.png" class="product-img" />
+          <h2 class="product-title">Roof Rack for Taycan</h2>
+          <span class="product-price">$10800</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box8 -->
+        <div class="product-box">
+          <img src="../images/spares3.png" class="product-img" />
+          <h2 class="product-title">Brake Pads</h2>
+          <span class="product-price">$300</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box9 -->
+        <div class="product-box">
+          <img src="../images/spare2.png" class="product-img" />
+          <h2 class="product-title">Shock Absorber</h2>
+          <span class="product-price">$9000</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box10 -->
+        <div class="product-box">
+          <img src="../images/acessorycayenne2.png" class="product-img" />
+          <h2 class="product-title">Steering Wheel</h2>
+          <span class="product-price">$2200</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box11 -->
+        <div class="product-box">
+          <img src="../images/acessorymacan1.png" class="product-img" />
+          <h2 class="product-title">Exhaust for Macan</h2>
+          <span class="product-price">$10650</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box12 -->
+        <div class="product-box">
+          <img src="../images/acessorytacan2.png" class="product-img" />
+          <h2 class="product-title">Front fender for Taycan</h2>
+          <span class="product-price">$3300</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box12 -->
+        <div class="product-box">
+          <img src="../images/acessorycayenne3.png" class="product-img" />
+          <h2 class="product-title">Roof Grabrail</h2>
+          <span class="product-price">$3700</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box12 -->
+        <div class="product-box">
+          <img src="../images/headlighttaycan.jpg" class="product-img" />
+          <h2 class="product-title">HeadLight for Taycan</h2>
+          <span class="product-price">$3900</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box12 -->
+        <div class="product-box">
+          <img src="../images/acessoryboxster2.png" class="product-img" />
+          <h2 class="product-title">Hood for Boxster</h2>
+          <span class="product-price">$11000</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+        <!-- box12 -->
+        <div class="product-box">
+          <img src="../images/spares4.png" class="product-img" />
+          <h2 class="product-title">Fuel Injector</h2>
+          <span class="product-price">$1700</span>
+          <i class="bx bx-shopping-bag add-cart"></i>
+        </div>
+      </div>
+          
+    </section>
+    <!-- add to cart end -->
+
+    <!-- footer start -->
+    <footer class="foot">
+      <div class="footercontainer">
+        <div class="rect">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="../footerelements/acesso1.html">Accessories</a></li>
+              <li><a href="../footerelements/spares.html">Spares</a></li>
+              <li><a href="#">Service book</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Gallery & Others</h4>
+            <ul>
+              <li><a href="../footerelements/gallery.html">Gallery</a></li>
+              <li><a href="../footerelements/comparision.html">Comparo</a></li>
+              <li>
+                <a href="../footerelements/locationfinal.html">Locations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Know Us!!</h4>
+            <ul>
+              <li><a href="../footerelements/history.html">History</a></li>
+              <li><a href="../Aboutus.html">About Us</a></li>
+              <li>
+                <a href="../footerelements/blogs and testimonial.html"
+                  >Testimonials</a
+                >
+              </li>
+              <li><a href="../footerelements/quote.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us!</h4>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-google-plus fa-3x"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>&#169;All rights reserved</h2>
+      <br />
+    </footer>
+    <!-- footer start -->
+    <script src="../javascript/nav.js"></script>
+    <script src="../javascript/testimonial2.js"></script>
+    <script>
+      //function buy(){
+        //  var buyitem=document.getElementByID("totalprices").value;
+          //localStorage.setItem("myvalue",buyitem);
+          //window.location.href="../unstuff/videodemo.html";
+      //}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+#submit-button{    
+    position:relative;
+    left:45%;
+    text-align: center;
+    color: black;
+    width: 140px;
+    background-color: lightcyan;
+    border-radius: 20px;
+    padding: 10px;
+    }
+#submit-button:hover{
+    background-color: rgb(204, 203, 203);
+    color:black;
+    padding: 15px;
+    transition: .7s ease;
+    border: 2px white solid;
+}
+@media(max-width:1010px){
+    #submit-button{
+    position:relative;
+    left:40%;
+    }
+}

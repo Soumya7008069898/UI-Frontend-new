@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>high</title>
+    <link rel="stylesheet" href="../css/high.css">
+    <style>
+      body{
+        background-image: linear-gradient(90deg,black,limegreen);
+      }
+    </style>
+  </head>
+  <body>
+    <label for="model-select">Select a car model:</label>
+<select id="model-select">
+  <option value="model1">Model 1</option>
+  <option value="model2">Model 2</option>
+  <option value="model3">Model 3</option>
+</select>
+
+<label for="price-input">Price:</label>
+<input type="text" id="price-input" readonly>
+<br>
+<br>
+
+<!--  -->
+Subjects: <select name="subject" id="subject">
+  <option value="" selected="selected">Select subject</option>
+</select>
+<br>
+<br>
+Topics: <select name="topic" id="topic">
+  <option value="" selected="selected">Please select subject first</option>
+</select>
+<br>
+<br>
+Chapters: <select name="chapter" id="chapter">
+  <option value="" selected="selected">Please select topic first</option>
+</select>
+<br>
+<br>
+<!-- <input type="submit" value="Submit">  -->
+<!--  -->
+
+<button type="button" id="submit-button">Submit</button>
+
+
+    <!-- js for expanding highlights emp read-->
+    <script>
+      const carPrices = {
+        model1: 10000,
+        model2: 15000,
+        model3: 20000
+      };
+      
+      const modelSelect = document.getElementById("model-select");
+      const priceInput = document.getElementById("price-input");
+      const submitButton = document.getElementById("submit-button");
+      
+      modelSelect.addEventListener("change", () => {
+        const selectedModel = modelSelect.options[modelSelect.selectedIndex].value;
+        const carPrice = carPrices[selectedModel];
+        priceInput.value = carPrice;
+      });
+      
+      submitButton.addEventListener("click", () => {
+        const selectedModel = modelSelect.options[modelSelect.selectedIndex].text;
+        const carPrice = carPrices[selectedModel];
+        alert(`Thank you for your order! You have purchased a ${selectedModel} for ${carPrice} dollars.`);
+      });
+      
+      
+    </script>
+
+    <script>
+      var subjectObject = {
+        "Front-end": {
+          "HTML": ["Links", "Images", "Tables", "Lists"],
+          "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+          "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
+        },
+        "Back-end": {
+          "PHP": ["Variables", "Strings", "Arrays"],
+          "SQL": ["SELECT", "UPDATE", "DELETE"]
+        }
+      }
+      window.onload = function() {
+        var subjectSel = document.getElementById("subject");
+        var topicSel = document.getElementById("topic");
+        var chapterSel = document.getElementById("chapter");
+        for (var x in subjectObject) {
+          subjectSel.options[subjectSel.options.length] = new Option(x, x);
+        }
+        subjectSel.onchange = function() {
+      //empty Chapters- and Topics- dropdowns
+          chapterSel.length = 1;
+          topicSel.length = 1;
+          //display correct values
+          for (var y in subjectObject[this.value]) {
+            topicSel.options[topicSel.options.length] = new Option(y, y);
+          }
+        }
+        topicSel.onchange = function() {
+          //empty Chapters dropdown
+          chapterSel.length = 1;
+          //display correct values
+          var z = subjectObject[subjectSel.value][this.value];
+          for (var i = 0; i < z.length; i++) {
+            chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+          }
+        }
+      }
+      </script>
+    
+  </body>
+</html>

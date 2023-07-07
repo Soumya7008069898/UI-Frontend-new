@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Panamerra</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style8.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerpicker" id="porsche"></div>
+      <div class="color">
+        <h3>Choose Your Color:</h3>
+        <br />
+        <h4>4S color:</h4>
+        <div class="color-selector">
+         
+          <div id="silver"></div>
+          <div id="navy"></div>
+          <div id="red"></div>
+          <div id="white"></div>
+        </div>
+        <div class="color-name">
+          
+          <div class="name"><p>silver</p></div>
+          <div class="name"><p>navy blue</p></div>
+          <div class="name"><p>red</p></div>
+          <div class="name"><p>white</p></div>
+        </div>
+        <h4>Coupe color:</h4>
+        <div class="color-selector">
+            <div id="orange"></div>
+            <div id="darkr"></div>               
+        </div>
+        <div class="color-name">
+            <div class="name"><p>lava orange</p></div>
+          <div class="name"><p>dark red</p></div>         
+        </div>
+      </div>
+    </div>
+    <script>
+      
+      let silverbtn = document.getElementById("silver");
+      let navybtn=document.getElementById("navy");
+      let redbtn = document.getElementById("red");
+      let whitebtn = document.getElementById("white");
+      let orangebtn=document.getElementById("orange");
+      let darkrbtn=document.getElementById("darkr");
+      let porsche = document.getElementById("porsche");
+
+      
+      silverbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker62.png)";
+      };
+      navybtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker61.png)";
+      }; 
+      redbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker65.png)";
+      };
+      whitebtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker64.png)";
+      };  
+      orangebtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker63.png)";
+      };  
+      darkrbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker66.png)";
+      };           
+    </script>
+  </body>
+</html>

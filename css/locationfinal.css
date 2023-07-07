@@ -1,0 +1,205 @@
+.product {
+    /* float: left;
+     background-color: #2196F3;
+     color: #ffffff;
+     width: 100px;
+     line-height: 100px;
+     text-align: center;
+     margin: 2px;*/
+     display: none;
+   }
+   body{
+       background-image: url(../images/background1.png) !important;
+       padding: 0px !important;;
+       margin: 0 !important;;
+       box-sizing: border-box !important;
+      }
+
+   
+   .show {
+     display: block;
+     animation:showOff 1.9s ease;
+     /* animation-iteration-count: 1;   */
+     animation-fill-mode: forwards;
+   }
+   @keyframes showOff{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+   }
+   
+   /*.container {
+     margin-top: 20px;
+     overflow: hidden;
+   }*/
+   
+   /* Style the buttons */
+   .btun {
+     border: none;
+     outline: none;
+     padding: 12px 16px;
+     background-color: #f1f1f1;
+     cursor: pointer;
+   }
+   .btun{
+       border:1px solid black;
+       border-radius:7px;
+       padding:15px;
+       margin-bottom: 25px;
+       background-color: beige;
+       color:black;
+       width:100px;
+   }
+   
+   .title{
+       font-size: 30px;
+   }
+   .button{
+       text-align: center;
+       margin-top: 23px;
+   }
+   .btun:hover{
+       background-color: green;
+       transition: all .6s ease;
+   }
+   .btun.active{
+       background-color: white;
+       color:black;
+   }
+   /* .cat{
+    padding-top: 60px;
+   } */
+   .cat #rock{
+       font-size: 28px !important;
+       color:white;
+       font-weight:600;
+       text-align: center; 
+       margin-top: 1em;     
+   }
+   
+   /* @media(max-width:480px){
+    .cat{
+        padding-top:5px;
+    }
+   }  */
+   .glow {
+    margin-top:2em;
+    font-weight:500;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 13px #e60073, 0 0 16px #e60073, 0 0 20px #e60073, 0 0 24px #e60073, 0 0 28px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 13px #ff4da6, 0 0 16px #ff4da6, 0 0 20px #ff4da6, 0 0 24px #ff4da6, 0 0 28px #ff4da6, 0 0 32px #ff4da6;
+    }
+  }
+
+  .bigpicture{
+    min-width: 100%;
+    display:flex;
+    justify-content:space-evenly;
+    /* padding:0px 15px; */
+    align-items: center;
+    height:auto;
+    background-color: black;
+  }
+
+/* copy */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:1px;
+    box-sizing: border-box;
+    border:none;
+    
+    text-transform: capitalize;
+    text-decoration: none;
+}
+ html{
+    font-size: 65%;
+}
+body{
+    background: #ddd;    
+}
+.container{
+    max-width: 100%;
+    margin:0 auto;
+    padding: 3rem 2rem;    
+}
+.container .title{
+    font-size: 3.5rem;
+    color:white;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align:center;
+}
+.container .products-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(31rem, 1fr));
+    gap:2.5rem;
+}
+/* .container .products-container{
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+} */
+/*  */
+.container .products-container .product{
+    /* text-align: center;    */
+    background-color:rgba(245, 248, 248, 0.667);
+    /* box-shadow:0 0.8rem 1.3rem rgba(0,0,0,0.2); */
+    cursor:pointer;
+    padding: 1.5rem 1.2rem;
+    /* outline-offset: -1.5rem; */
+}
+.container .products-container .product:hover{
+    outline:2px solid white;
+    outline-offset: 0;
+    color:red;
+    background-color: white;
+    box-shadow: snow;
+    transition: all .5s linear;
+}
+.container .products-container .product img{
+     height:25rem;     
+}
+.container .products-container.product:hover img{
+    transform:scale(0.9);
+}
+.container .products-container .product h3{
+    padding:0.5rem 0.2rem;
+    font-size:2.5rem;
+    color:black;
+    opacity: 0.7;
+}
+.container .products-container .product h4{
+    color:black;
+    font-size: 15px;
+    text-align: left;
+}
+.container .products-container .product .btn a{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.705);
+    font-size: 20px;
+    padding:1px 100px;
+    border:0.7px solid white;
+}
+.container .products-container .product .btn a:hover{
+    color:white;
+    background-color: green;
+    text-transform: capitalize;
+}
+/* card-end */
+
+/* footer start */

@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0;
+    padding:1px;
+    box-sizing: border-box;
+    border:none;
+    
+    text-transform: capitalize;
+    text-decoration: none;
+}
+ html{
+    font-size: 65%;
+}
+body{
+    background: #ddd;    
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 3rem 2rem;    
+}
+.container .title{
+    font-size: 3.5rem;
+    color:white;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align:center;
+}
+.container .products-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(31rem, 1fr));
+    gap:2.5rem;
+}
+.container .products-container .product{
+    text-align: center;   
+    background-color:rgba(245, 248, 248, 0.667);
+    box-shadow:0 0.8rem 1.3rem rgba(0,0,0,0.2);
+    cursor:pointer;
+    padding: 1.5rem 1.2rem;
+    outline-offset: -1.5rem;
+}
+.container .products-container .product:hover{
+    outline:2px solid white;
+    outline-offset: 0;
+    color:red;
+    background-color: white;
+    box-shadow: snow;
+    transition: all .5s linear;
+}
+.container .products-container .product img{
+     height:25rem;     
+}
+.container .products-container.product:hover img{
+    transform:scale(0.9);
+}
+.container .products-container .product h3{
+    padding:0.5rem 0.2rem;
+    font-size:2.5rem;
+    color:black;
+    opacity: 0.7;
+}
+.container .products-container .product h4{
+    color:black;
+    font-size: 15px;
+    text-align: left;
+}
+.container .products-container .product .btn a{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.705);
+    font-size: 20px;
+    padding:1px 100px;
+    border:0.7px solid white;
+}
+.container .products-container .product .btn a:hover{
+    color:white;
+    background-color: rgb(178, 180, 178);
+    text-transform: capitalize;
+}
+/* card-end */
+
+/* footer start */
+.footercontainer{
+    max-width: 1200px;
+    background-color: rgba(245, 248, 248, 0.37);
+    margin:auto;
+    padding:2px;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+.foot{
+    background-color:transparent;
+    padding:40px 3px 20px;
+}
+.rect{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2px;
+}
+.footer-col{
+    width:24%;
+    padding:3px 11px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: black;
+    font-weight:650;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom:15px;   
+}
+.footer-col ul li a{
+    font-size: 15px;
+    font-weight:350;
+    padding: 10px 2px;
+    color:black;
+    display:block;
+    transition: all 0.2s ease;
+}
+.footer-col ul li a:hover{
+    color:white;
+    padding-left:10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.footer-col .social a{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    font-size: 15px;
+    margin:0px 10px 10px 0px;    
+    line-height:45px;
+    color:black;
+    border-radius:50%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.footer-col .social a:hover{
+    color:blue;
+}
+@media(max-width: 780px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 550px){
+    .footer-col{
+        width:100%;
+    }
+}
+h2{
+    width:100%;
+    text-align: center;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.405);
+}

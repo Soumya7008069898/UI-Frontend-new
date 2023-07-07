@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/background1.png);
+}
+#aboutone{
+font-size:25px; color:white; text-align:center; background-color:transparent;
+margin-top: 20px;
+}
+.highlight{
+    /* min-height: 100vh; */
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+.container{
+    max-width:950px;
+    background-color:transparent;
+    width:100%;
+    padding:60px 0px;
+    overflow-x:hidden;       /*hides the extra cards out of div tag (overflow also works)*/
+}
+.container .main-card{
+    width:200%;
+    /* background: grey; */
+    display:flex;
+    justify-content: space-evenly;
+    transition:all 1.0s ease-in-out;
+}
+#two:checked ~ .main-card{
+    margin-left:-100%;     /*it moves the main-card by -100% so the cards2 are visible*/
+}
+.main-card .cards{
+    display:flex;
+    justify-content:space-between;
+    margin: 0 15px;
+    width: calc(100% / 2 - 10px);
+    flex-wrap: wrap;
+}
+.main-card .cards .card{
+    background:white;
+    width: calc(100% / 3 - 10px);
+    padding:25px;
+    border-radius:25px;
+    height:400px; 
+    transition: all 1s ease;
+}
+.main-card .cards .card:hover{
+    margin-top:-15px;
+    background-image:linear-gradient(45deg,grey,white,grey);
+    box-shadow: 10px red;
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.cards .card .content .img{
+  height: 115px;
+  width:125px;
+  margin-bottom: 15px;
+  background:#ff676d;
+  border-radius: 50%;
+  padding:4px;
+}
+.cards .card .content .img img{
+    height:100%;
+    width:100%;
+    object-fit:fill;
+    border-radius: 50%;
+    border:3px solid #ffe;
+}
+.card .content .details .name{
+    font-size: 20px;
+    font-weight:500;
+}
+.card .content .details .job{
+    font-size: 20px;
+    color:#ff676d;
+}
+ .card .content .media-icons{
+    display:flex;
+    margin-top:10px;
+}
+.card .content .media-icons a{
+    height:35px;
+    width:35px;
+    background-color: black;
+    color:white;
+    margin:0 4px;
+    border-radius: 50%;
+    text-align:center;
+    line-height: 34px;
+    font-size:15px;
+    border: 2px solid transparent;
+    transition: all 0.5s ease;
+}
+.content .media-icons a:hover{
+    border-color: #ff676d;
+    color:black;
+    background-color: #fff;
+}
+.button{
+    display:flex;
+    margin:20px;
+    justify-content: center;
+}
+label{
+    height:15px;
+    width:15px;
+    background:#ffe;
+    border-radius: 15px;
+    margin:2px 6px;
+    transition: all 1.5s ease;
+    border:1px solid black;
+}
+ label.active{
+    width:30px;  /* size of button when active*/
+    background-color:blue;
+}
+#one:checked ~ .button label.one{
+    width: 30px;
+    background-color:blue;
+}
+#two:checked ~ .button label.two{
+    width: 30px;
+    background-color:blue;
+}
+#two:checked ~ .button label.one{
+    width:15px;             /* changes first button shape when 2nd click*/
+    background-color: #ffe;
+}
+#one:checked ~ .button label.two{
+    width:15px;             /* changes second button shape when 1st click(not necessary)*/
+}
+input[type="radio"]{
+    display:none;
+}
+.content span{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.content button{
+    margin-top: -2px;
+    background-color:snow;
+    font-size:14px;
+    color:black;
+    border-radius: 50%;
+    padding:10px;
+}
+.content button:hover{
+    background-image:linear-gradient(45deg,grey,white,grey);
+}

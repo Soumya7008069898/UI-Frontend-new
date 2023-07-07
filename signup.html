@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</title>  
+        <link rel="icon" href="./images/logo.png" >
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <h1 id="start">Sign Up</h1>
+                <form name="Register" method="post">
+                    <div class="input-group">
+                        <div class="input-field" >
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" name="fullname" id="name" placeholder="username">
+                        </div>
+                        <div class="input-field" >
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="email" placeholder="email" id="email">
+                        </div>
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="password" placeholder="password" id="password">
+                        </div>
+                        <div class="input-field" id="nameField">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" name="passwordconfirm"  placeholder=" confirm password" id="confirmpassword">
+                        </div>
+                    </div>
+                </form>
+                <div class="btn">
+                    <button id="signupButton" onclick="validatesignup()">Sign Up</button>
+                    <a id="signinButton" href="./Loginpage.html">Log In</a>
+                </div>
+            </div>
+        </div> 
+        <script src="./javascript/signup.js"></script>
+        <!-- <script>
+            let signupButton=document.getElementById("signupButton");
+            let signinButton=document.getElementById("signinButton");
+            let nameField=document.getElementById("nameField");
+            let start=document.getElementById("start");
+           
+            signinButton.onclick=function(){
+                nameField.style.maxHeight = "0px";
+                title.innerHTML='Sign In';
+                signupButton.classlist.add("disable");
+                signinButton.classlist.remove("disable");  
+            }
+            signupButton.onclick=function(){
+                nameField.style.maxHeight = "70px";
+                title.innerHTML='Sign Up';
+                signinButton.classlist.add("disable");
+                signupButton.classlist.remove("disable");     
+            }
+        </script>       -->
+        <!-- <script>
+            let signupButton=document.getElementById("signupButton");
+            let signinButton=document.getElementById("signinButton");
+            signinButton.onclick=myFunc()
+                function myFunc() {
+                    window.location.href = "file:///C:/Users/soumya.sahoo/Desktop/porsche/html/signup.html";
+                }
+            signupButton.onclick=myFunction()
+                function myFunction() {
+                    window.location.href="file:///C:/Users/soumya.sahoo/Desktop/porsche/html/index.html";
+                }
+        </script> -->
+    </body>
+</html>
+
+<!-- <i class="fa-regular fa-user"></i> -->

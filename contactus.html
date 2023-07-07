@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>navbar trials</title>
+    <link rel="icon" href="./images/logo.png" >
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/contactus.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/bookbtn.css" />
+    <style>
+      body{
+        background-image: url(../images/background1.png);
+      }
+      .logo img {
+        height: 4.7rem;
+        width: 130%;
+        margin-left: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <!-- nav start -->
+   <div class="header">
+    <div class="container1">
+      <div class="header-main">
+        <div class="logo">
+          <img src="../images/logo.png" height="60px" width="78px"
+          />
+        </div>
+        <div class="open-nav-menu">
+          <span></span>
+        </div>
+        <div class="menu-overlay"></div>
+        <!-- navigation menu start -->
+         <nav class="nav-menu">
+          <div class="close-nav-menu">
+            <img src="../images/cancel.png" alt="close" />
+          </div>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu"
+                >Services &#38; Equipment <i class="plus"></i
+              ></a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="../footerelements/acesso1.html">Accessories</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/spares.html">Spares</a>
+                </li>
+                <li class="menu-item"><a href="../footerelements/Servicepage.html">Service book</a></li>
+                <li class="menu-item">
+                  <a href="../footerelements/comparision.html">Comparision</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="../Aboutus.html">About Us</a>
+            </li>
+            <li class="menu-item">
+              <a href="../contactus.html">Contact Us</a>
+            </li>
+            <li class="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu"
+                >Social<i class="plus"></i
+              ></a>
+              <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="../footerelements/locationfinal.html">Locations</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/blogs and testimonial.html"
+                    >Testimonials & Reviews</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/gallery.html">Gallery</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/history.html">History</a>
+                </li>
+                <li class="menu-item">
+                  <a href="../footerelements/quote.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item">
+              <a href="../Loginpage.html">Login</a>
+            </li>
+            <li class="menu-item">
+              <a href="../unstuff/addtocart.html">My Cart</a>
+            </li>
+            <li class="menu-item">
+              <a href="../unstuff/profile.html">My Account</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- navigation menu end -->
+       </div>
+    </div>
+  </div>
+  <!-- nav end -->
+    <!-- navbar end -->
+    <br />
+    <!-- contact form start -->
+
+    <div class="contact_us">
+      <div class="heading">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="boxes">
+        <div class="contact form">
+          <!-- <h3>send a message</h3> -->
+          <form class="contacts_form" action="#">
+            <div class="formfill">
+              <div class="rowbox">
+                <div class="input1">
+                  <label for="first">firstname</label>
+                  <input
+                    type="text"
+                    name="first"
+                    id="first"
+                    class="nameone"
+                    placeholder="soumya"
+                    required
+                  />
+                </div>
+                <div class="input1">
+                  <label for="last">lastname</label>
+                  <input
+                    type="text"
+                    name="last"
+                    id="last"
+                    placeholder="sahoo"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="rowbox">
+                <div class="input1">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="emails"
+                    placeholder="soumya@gmail.com"
+                    required
+                  />
+                </div>
+                <div class="input1">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    name="first"
+                    id="phone"
+                    placeholder="123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="rowbox2">
+                <div class="input1">
+                  <label for="querytext">Query</label>
+                  <textarea
+                    id="querytext"
+                    class="message"
+                    rows="6"
+                    name="texts"
+                    placeholder="write your querry here..."
+                  >
+                  </textarea>
+                </div>
+              </div>
+              <div class="rowbox2">
+                <div class="input1">
+                  
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="btn">
+            <button
+              type="submit"
+              id="submit-button"
+               onClick="validateSubmit()"
+            >
+              Submit
+            </button>
+            
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact info">
+          <h3>Contact Info</h3>
+          <div class="infobox">
+            <div>
+              <span><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+              <p>
+                karol bagh Spalace,Delhi <br />
+                India 465007
+              </p>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="#">ssoumyaprakash45@gmail.com</a>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:7008069898">7008069898</a>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="contact map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53645.479024749795!2d77.16395056854998!3d28.65117681626238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d029c5f402ed3%3A0x942174294c9dd946!2sKarol%20Bagh%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1678646384670!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact end -->
+    <br />
+    <!-- footer start -->
+    <footer class="foot">
+      <div class="footercontainer">
+        <div class="rect">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="../footerelements/acesso1.html">Accessories</a></li>
+              <li><a href="../footerelements/spares.html">Spares</a></li>
+              <li><a href="#">Service book</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Gallery & Others</h4>
+            <ul>
+              <li><a href="../footerelements/gallery.html">Gallery</a></li>
+              <li><a href="../footerelements/comparision.html">Comparo</a></li>
+              <li><a href="../footerelements/locationfinal.html">Locations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Know Us!!</h4>
+            <ul>
+              <li><a href="../footerelements/history.html">History</a></li>
+              <li><a href="../Aboutus.html">About Us</a></li>
+              <li><a href="../footerelements/blogs and testimonial.html">Testimonials</a></li>
+              <li><a href="../footerelements/quote.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us!</h4>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-google-plus fa-3x"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>&#169;All rights reserved</h2>
+      <br />
+    </footer>
+    <!-- footer end -->
+    <!-- nav js start -->
+    <script src="./javascript/nav.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script>
+      const form=document.querySelector('.contact_form'),
+            name=document.querySelector('.nmaeone'),
+            email=document.querySelector('.emails'),
+            body=document.querySelector('.message')
+
+    </script>
+    <script>
+      function validateSubmit() {
+        var firstname = document.getElementById("first").value; //name getelement
+        var lastname = document.getElementById("last").value; //name getelement
+        var phonenumber = document.getElementById("phone").value; //number
+        var querry = document.getElementById("querytext").value; //name getelement
+        var email = document.getElementById("email").value; //email getelement
+        var emailRegex =
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var regName = /\d+$/g;
+        var phoneno = /^\i{10}$/;
+
+        if (firstname == "") {
+          alert("Name must be there");
+          return false;
+        }
+        if (firstname.match(regName)) {
+          alert("enter a valid name");
+          return false;
+        }
+        if (lastname == "") {
+          alert("Name must be there");
+          return false;
+        }
+        if (lastname.match(regName)) {
+          alert("enter a valid name");
+          return false;
+        }
+        if (phonenumber == "") {
+          alert("phone number must be there");
+          return false;
+        }
+        if (phonenumber.match(phoneno)) {
+          alert("enter a valid number");
+          return false;
+        }
+        if (email == "") {
+          alert("Email field must be filled out");
+          return false;
+        }
+        // Check if the email
+        if (!email.match(emailRegex)) {
+          alert("Please enter a valid email address");
+          return false;
+        }
+        if (querry == "") {
+          alert("write your query");
+          return false;
+        }
+
+        //Email.send({
+          //Host : "smtp.gmail.com",
+          //Username : "signups7423@gmail.com",
+          //Password : "Soumya@123",
+          //To : 'signups7423@gmail.com',
+          //From : document.getElementById("email").value,
+          //Subject : "new contact query",
+          //Body : "Name: " + document.getElementById("first").value
+            //      +"<br> Email: " +document.getElementById("email").value
+              //    +"<br> body: " +document.getElementById("querytext").value
+      //}).then(
+        //message => alert("booking done successfully")
+      //);
+
+       // alert("your querry is reported sucessfully. We will contact you soon :) ");
+        window.location = "../index.html"; // Redirecting to other page.
+        return false;
+      }
+    </script>
+
+
+    
+    <!-- nav js end -->
+  </body>
+</html>
+
+
+
+<!-- function phonenumber(inputtxt)
+{
+  var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+  if((inputtxt.value.match(phoneno))
+        {
+      return true;
+        }
+      else
+        {
+        alert("message");
+        return false;
+        }
+}
+ -->

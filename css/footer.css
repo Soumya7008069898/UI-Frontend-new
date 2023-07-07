@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.footercontainer{
+    max-width: 1400px;
+    background-color: rgba(245, 248, 248, 0.37);
+    margin:auto;
+    padding:2px;
+    color:white;
+}
+ul{
+    list-style: none;
+}
+.foot{
+    background-color:transparent;
+    padding:40px 3px 20px;
+}
+.rect{
+    display:flex;
+    flex-wrap: wrap;
+    padding:2px;
+}
+.footer-col{
+    width:24%;
+    padding:3px 11px;
+}
+.footer-col h4{
+    font-size: 25px;
+    color: black;
+    font-weight:650;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom:15px;   
+}
+.footer-col ul li a{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight:500;
+    padding: 10px 2px;
+    color:black;
+    display:block;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+.footer-col ul li a:hover{
+    color:white;
+    padding-left:10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.footer-col .social a{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    font-size: 10px;
+    margin:0px 10px 10px 0px;    
+    line-height:45px;
+    color:black;
+    border-radius:50%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.footer-col .social a:hover{
+    color:snow;
+}
+@media(max-width: 780px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 550px){
+    .footer-col{
+        width:100%;
+    }
+}
+h2{
+    width:100% ;
+    text-align: center ;
+    color:white ;
+    background-color: rgba(0, 0, 0, 0.405) ;
+    font-size:16px;
+}
+

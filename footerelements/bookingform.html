@@ -1,0 +1,325 @@
+<html>
+  <head>
+    <title>high</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/aboutslide.css" />
+    <link rel="stylesheet" href="../css/booking.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <!-- <link rel="stylesheet" href="../" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="../"> -->
+    <style>
+      .about_me{
+        background-image: url(../images/background8.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav start -->
+    <div class="header">
+      <div class="container1">
+        <div class="header-main">
+          <div class="logo">
+            <img src="../images/logo.png" height="60px" width="78px"
+            />
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-- navigation menu start -->
+           <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <img src="../images/cancel.png" alt="close" />
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Services &#38; Equipment <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="../footerelements/acesso1.html">Accessories</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/spares.html">Spares</a>
+                  </li>
+                  <li class="menu-item"><a href="../footerelements/Servicepage.html">Service book</a></li>
+                  <li class="menu-item">
+                    <a href="../footerelements/comparision.html">Comparision</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="../Aboutus.html">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="../contactus.html">Contact Us</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Social<i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="../footerelements/locationfinal.html">Locations</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/blogs and testimonial.html"
+                      >Testimonials & Reviews</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/gallery.html">Gallery</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/history.html">History</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/quote.html">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="../Loginpage.html">Login</a>
+              </li>
+              <li class="menu-item">
+                <a href="../unstuff/addtocart.html">My Cart</a>
+              </li>
+              <li class="menu-item">
+                <a href="../unstuff/profile.html">My Account</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+         </div>
+      </div>
+    </div>
+    <br />
+    <!-- nav end -->
+    <!-- booking form start -->
+    <section class="about_me">
+      <h2 id="hero">Booking Form</h2>
+      <div class="content1">
+        <img src="../images/seller.png" />
+        <div class="text1">
+          <h1>Take Your Porsche Home</h1>
+
+          <!-- <h4>Fill the Form</h4> -->
+          <div class="form1">
+            <form class="formreal anime2">
+              <!-- <br> -->
+              <br />
+              <label for="name">NAME</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Soumya prakash"
+                required
+              />
+              <br />
+              <br />
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                placeholder="saoumya@gmail.com"
+                required
+              />
+              <br />
+              <br />
+              <label for="phone">PHONE</label>
+              <input
+                type="phone number"
+                name="phone"
+                id="phone"
+                placeholder="1234567890"
+                required
+              />
+              <br />
+              <br />
+              <label for="model-select">Select a car model:</label>
+              <select id="model-select" required>
+                <option value="selectmodel">select the model</option>
+                <option value="model1">Model 1</option>
+                <option value="model2">Model 2</option>
+                <option value="model3">Model 3</option>
+                <option value="model4">Model 4</option>
+                <option value="model5">Model 5</option>
+                <option value="model6">Model 6</option>
+              </select>
+              <br />
+              <br />
+              <label for="price-input">Price:</label>
+              <input type="text" id="price-input" readonly />
+              <br />
+              <br />
+              <div class="btn">
+                <button
+                  type="button"
+                  id="submit-button"
+                  onClick="validateSubmit(); reset(); return false;"
+                >
+                  Submit
+                </button>
+                
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="foot">
+      <div class="footercontainer">
+        <div class="rect">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="../footerelements/acesso1.html">Accessories</a></li>
+              <li><a href="../footerelements/spares.html">Spares</a></li>
+              <li><a href="#">Service book</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Gallery & Others</h4>
+            <ul>
+              <li><a href="../footerelements/gallery.html">Gallery</a></li>
+              <li><a href="../footerelements/comparision.html">Comparo</a></li>
+              <li><a href="../footerelements/locationfinal.html">Locations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Know Us!!</h4>
+            <ul>
+              <li><a href="../footerelements/history.html">History</a></li>
+              <li><a href="../Aboutus.html">About Us</a></li>
+              <li><a href="../footerelements/blogs and testimonial.html">Testimonials</a></li>
+              <li><a href="../footerelements/quote.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us!</h4>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-google-plus fa-3x"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>&#169;All rights reserved</h2>
+      <br />
+    </footer>
+    <!-- footer -->
+    <script src="../javascript/nav.js"></script>
+    
+    <script>
+      //dropdown script//
+      const carPrices = {
+        selectmodel: 0,
+        model1: 17000,
+        model2: 15000,
+        model3: 20000,
+        model4: 25000,
+        model5: 30000,
+        model6: 22300,
+      };
+
+      const modelSelect = document.getElementById("model-select");
+      const priceInput = document.getElementById("price-input");
+      const submitButton = document.getElementById("submit-button");
+
+      modelSelect.addEventListener("change", () => {
+        const selectedModel =
+          modelSelect.options[modelSelect.selectedIndex].value;
+        const carPrice = carPrices[selectedModel];
+        priceInput.value = carPrice;
+      });
+
+      //submitButton.addEventListener("click", () => {
+      //  const selectedModel = modelSelect.options[modelSelect.selectedIndex].text;
+      //  const carPrice = carPrices[selectedModel];
+      //  alert(`Thank you for your order! You have booked a ${selectedModel} for ${carPrice} dollars.
+      //  we will contact you soon`);
+      // window.location.href = "../index.html";
+      //});
+      //dropdown end//
+      //submit btn//
+      function validateSubmit() {
+        var name = document.getElementById("name").value; //name getelement
+        var email = document.getElementById("email").value; //email getelement
+        var phonenumber = document.getElementById("phone").value;
+        var emailRegex =
+          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var regName = /\d+$/g;
+        var phoneno = /^\i{10}$/;
+
+        if (name == "") {
+          alert("Name must be there");
+          return false;
+        }
+        if (name.match(regName)) {
+          alert("enter a valid name");
+          return false;
+        }
+        if (email == "") {
+          alert("Email field must be filled out");
+          return false;
+        }
+        // Check if the email
+        if (!email.match(emailRegex)) {
+          alert("Please enter a valid email address");
+          return false;
+        }
+        if (phonenumber == "") {
+          alert("NUMBER must be there");
+          return false;
+        }
+        if (phonenumber.match(phoneno)) {
+          alert("enter a valid number");
+          return false;
+        }
+
+        Email.send({
+          Host : "smtp.gmail.com",
+          Username : "signups7423@gmail.com",
+          Password : "Soumya@123",
+          To : 'signups7423@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "This is the subject",
+          Body : "And this is the body"
+      }).then(
+        message => alert("booking done successfully")
+      );
+
+        alert("your booking is done successfully. We will contact you soon :) ");
+        window.location = "../index.html"; // Redirecting to other page.
+        return false;
+      }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+
+    </script>
+  </body>
+</html>

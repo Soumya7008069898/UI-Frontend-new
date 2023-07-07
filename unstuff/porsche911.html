@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>911</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style4.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containerpicker" id="porsche"></div>
+      <div class="color">
+        <h3>Choose Your Color:</h3>
+        <br />
+        <h4>Carrera color:</h4>
+        <div class="color-selector">
+          <div id="grey"></div>
+          <div id="green"></div>
+          <div id="navy"></div>
+        </div>
+        <div class="color-name">
+          <div class="name">grey</div>
+          <div class="name">green</div>
+          <div class="name">navy</div>
+        </div>
+        <h4>Spyder color:</h4>
+        <div class="color-selector">
+          <div id="black"></div>              
+          <div id="silver"></div>
+          <div id="red"></div> 
+        </div>
+        <div class="color-name">
+          <div class="name">black</div>         
+          <div class="name">silver</div>
+          <div class="name">red</div>
+        </div>
+        <h4>Race color:</h4>
+        <div class="color-selector">
+          <div id="blue"></div>
+          <div id="race"></div>
+        </div>
+        <div class="color-name">
+          <div class="name">blue</div>
+          <div class="name">race Silver</div>          
+        </div>
+      </div>
+    </div>
+    <script>
+      let greybtn = document.getElementById("grey");
+      let greenbtn = document.getElementById("green");
+      let navybtn = document.getElementById("navy");
+      let blackbtn = document.getElementById("black");
+      let redbtn = document.getElementById("red");
+      let silverbtn = document.getElementById("silver");
+      let bluebtn=document.getElementById("blue");
+      let racebtn=document.getElementById("race");
+      let porsche = document.getElementById("porsche");
+
+      greybtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker23.png)";
+      };
+      greenbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker27.png)";
+      };
+      navybtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker28.png)";
+      };
+      blackbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker20.png)";
+      };
+      redbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker25.png)";
+      };
+      silverbtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker24.png)";
+      };
+      bluebtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker21.png)";
+      };
+      racebtn.onclick = function () {
+        porsche.style.backgroundImage = "url(../images/colorpicker22.png)";
+      };                   
+    </script>
+  </body>
+</html>

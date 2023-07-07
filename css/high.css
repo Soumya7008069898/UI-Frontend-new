@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+/* body{
+    background-image: url(../images/background1.png);
+} */
+.bodycase{
+    margin-top: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:65vh;
+    overflow:hidden;
+    margin:auto;
+    width:100%;
+    background-color:rgba(18, 16, 17, 0.941);
+}
+.highlight{
+    display:flex;
+    width:93vw;
+}
+h1{
+    font-size:40px;
+    color:white;
+    font-weight:500;
+    text-align: center;
+}
+.highcard{
+    background-size: auto 145%;
+    background-position: center;
+    height:55vh;
+    border:3px solid red;
+    cursor:pointer;
+    color:yellow;
+    background-repeat: none;
+    flex:0.5;
+    margin:0px 5px;
+    border-radius:50px;
+    position:relative;  /*if absolute it overlap*/
+}
+.highcard h3{
+   font-size:23px;
+   position:relative;
+   transform:rotate(-90deg) translateX(-130px);
+   /* left:10px;
+   top:10px; */
+   /* left:22px;
+   bottom:22px; */
+   margin-top: 30px;
+   opacity:1;
+   text-transform: capitalize;
+   
+}
+.highcard h4{
+    color:white;
+    font-size: 20px;
+    opacity:0;
+    text-align: center;
+}
+.highcard p{
+    /* position:absolute;
+    top:65px;
+    left:20px; */
+    position:relative;
+    color:white;
+    font-size: 15px;
+    opacity:0;
+    text-align: center; 
+}
+.highcard.active{
+    flex: 4;
+    margin-bottom: -10px;
+    transition: all 1s ease-in-out;
+}
+.highcard.active h3{
+    opacity: 0;
+}
+.highcard.active h4{
+    opacity: 1;
+    
+}
+.highcard.active p{
+    opacity: 1;
+}
+/* 
+    
+  @media (max-width:500px){
+     .highlight{
+        width:110vw
+    }
+    .highcard:nth-of-type(4),
+    .highcard:nth-of-type(5){
+        display:none;
+    } 
+    
+} */
+@media(max-width:500px){
+    .bodycase{
+        height:35vh;
+    }
+    .highcard{
+        height:30vh;
+    }
+}

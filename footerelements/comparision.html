@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/comparision.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      
+        .logo img {
+          height: 4.4rem;
+          width: 150%;
+          margin-left: -15px;
+        }
+      
+    </style>
+    <title>Title</title>
+  </head>
+
+  <body>
+    <!-- navStart -->
+    <div class="header">
+      <div class="container1">
+        <div class="header-main">
+          <div class="logo">
+            <img src="../images/logo.png" height="60px" width="78px"
+            />
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-- navigation menu start -->
+           <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <img src="../images/cancel.png" alt="close" />
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Services &#38; Equipment <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="../footerelements/acesso1.html">Accessories</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/spares.html">Spares</a>
+                  </li>
+                  <li class="menu-item"><a href="../footerelements/Servicepage.html">Service book</a></li>
+                  <li class="menu-item">
+                    <a href="../footerelements/comparision.html">Comparision</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="../Aboutus.html">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a href="../contactus.html">Contact Us</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Social<i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="../footerelements/locationfinal.html">Locations</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/blogs and testimonial.html"
+                      >Testimonials & Reviews</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/gallery.html">Gallery</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/history.html">History</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="../footerelements/quote.html">FAQ</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="../Loginpage.html">Login</a>
+              </li>
+              <li class="menu-item">
+                <a href="../unstuff/addtocart.html">My Cart</a>
+              </li>
+              <li class="menu-item">
+                <a href="../unstuff/profile.html">My Account</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+         </div>
+      </div>
+    </div>
+   <br> 
+    <!-- navEnd -->
+
+    <!-- comparision start -->
+    <h1 class="display-5 my-5 text-center">Comparision</h1>
+    <div class="container">
+      <div class="col-md-9 mx-auto">
+        <table class="table">
+          <tr class="bg-light">
+            <th>Select Product</th>
+            <th width="400px">
+              <select
+                class="form-control"
+                id="select1"
+                onchange="item1(this.value)"
+              >
+                <option value="0">-- Select Anyone --</option>
+              </select>
+            </th>
+            <th width="400px">
+              <select
+                class="form-control"
+                id="select2"
+                onchange="item2(this.value)"
+              >
+                <option value="0">-- Select Anyone --</option>
+              </select>
+            </th>
+          </tr>
+          <!-- 1 -->
+          <tr>
+            <th>Product Image</th>
+            <td>
+              <img src="../images/logo.png" id="img1" alt=" " />
+            </td>
+            <td>
+              <img src="../images/logo.png" id="img2" alt=" " />
+            </td>
+          </tr>
+          <!-- 2 -->
+          <tr>
+            <th>Power</th>
+            <td id="power1">N/A</td>
+            <td id="power2">N/A</td>
+          </tr>
+          <!-- 3 -->
+          <tr>
+            <th>Torque</th>
+            <td id="tor1">N/A</td>
+            <td id="tor2">N/A</td>
+          </tr>
+          <!-- 4 -->
+          <tr>
+            <th>Ground Clearance</th>
+            <td id="gc1">N/A</td>
+            <td id="gc2">N/A</td>
+          </tr>
+          <!-- 5 -->
+          <tr>
+            <th>Top Speed</th>
+            <td id="ts1">N/A</td>
+            <td id="ts2">N/A</td>
+          </tr>
+          <!-- 6 -->
+          <tr>
+            <th>Fuel Efficiency</th>
+            <td id="fe1">N/A</td>
+            <td id="fe2">N/A</td>
+          </tr>
+          <!-- 7 -->
+          <tr>
+            <th>Range</th>
+            <td id="range1">N/A</td>
+            <td id="range2">N/A</td>
+          </tr>
+          <!-- 8 -->
+          <tr>
+            <th>Fuel Capacity</th>
+            <td id="fc1">N/A</td>
+            <td id="fc2">N/A</td>
+          </tr>
+          <!-- 9 -->
+          <tr>
+            <th>Transmission</th>
+            <td id="tran1">N/A</td>
+            <td id="tran2">N/A</td>
+          </tr>
+          <!-- 10 -->
+          <tr>
+            <th>Boot Space</th>
+            <td id="bs1">N/A</td>
+            <td id="bs2">N/A</td>
+          </tr>
+          <!-- 11 -->
+          <tr>
+            <th>Payload</th>
+            <td id="pay1">N/A</td>
+            <td id="pay2">N/A</td>
+          </tr>
+          <!-- 12 -->
+          <tr>
+            <th>WheelBase</th>
+            <td id="wb1">N/A</td>
+            <td id="wb2">N/A</td>
+          </tr>
+          <!-- 13 -->
+          <tr>
+            <th>Height</th>
+            <td id="height1">N/A</td>
+            <td id="height2">N/A</td>
+          </tr>
+          <!-- 14 -->
+          <tr>
+            <th>Width</th>
+            <td id="width1">N/A</td>
+            <td id="width2">N/A</td>
+          </tr>
+          <!-- 15 -->
+          <tr>
+            <th>Length</th>
+            <td id="length1">N/A</td>
+            <td id="length2">N/A</td>
+          </tr>
+          <!-- 16 -->
+          <tr>
+            <th>Weight</th>
+            <td id="weight1">N/A</td>
+            <td id="weight2">N/A</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!--comp end -->
+
+    <!-- footer start -->
+    <footer class="foot">
+      <div class="footercontainer">
+        <div class="rect">
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="../footerelements/acesso1.html">Accessories</a></li>
+              <li><a href="../footerelements/spares.html">Spares</a></li>
+              <li><a href="#">Service book</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Gallery & Others</h4>
+            <ul>
+              <li><a href="../footerelements/gallery.html">Gallery</a></li>
+              <li><a href="../footerelements/comparision.html">Comparo</a></li>
+              <li><a href="../footerelements/locationfinal.html">Locations</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Know Us!!</h4>
+            <ul>
+              <li><a href="../footerelements/history.html">History</a></li>
+              <li><a href="../Aboutus.html">About Us</a></li>
+              <li><a href="../footerelements/blogs and testimonial.html">Testimonials</a></li>
+              <li><a href="../footerelements/quote.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us!</h4>
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-facebook fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter fa-3x"></i></a>
+              <a href="#"
+                ><i class="fa-brands fa-square-google-plus fa-3x"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-3x"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+              <a href="#"><i class="fa-solid fa-envelope fa-3x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>&#169;All rights reserved</h2>
+      <br />
+    </footer>
+    <!-- footer end -->
+    <script src="../javascript/comp.js"></script>
+    <script src="../javascript/nav.js"></script>
+    
+  </body>
+</html>
